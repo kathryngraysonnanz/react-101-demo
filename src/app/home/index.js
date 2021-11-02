@@ -26,9 +26,9 @@ export default function Home() {
           <p>{checkName(name)}</p>
         </div>
 
-        <Page
+        {/* <Page
           name={name}
-        />
+        /> */}
         </div>
     </div>
   );
