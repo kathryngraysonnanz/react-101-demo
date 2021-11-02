@@ -1,0 +1,21 @@
+.home-wrapper {
+  background-color: black;
+  height: calc(100vh - 6px);
+  width: calc(100vw - 6px);
+  color: white;
+  font-size: 1.5rem;
+  border: 3px solid skyblue;
+  padding: 20px;
+}
+
+.home-wrapper h3 {
+  color: skyblue;
+  margin: 0;
+}
+
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
