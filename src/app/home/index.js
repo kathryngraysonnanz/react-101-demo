@@ -31,7 +31,8 @@ export default function Home() {
 
         <Page
           name={name}
-          state={{value: [value, setValue]}}
+          updateValue={setValue}
+          value={value}
         />
         </div>
     </div>
