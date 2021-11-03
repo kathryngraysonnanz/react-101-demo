@@ -1,7 +1,7 @@
 .home-wrapper {
   background-color: black;
-  height: calc(100vh - 6px);
-  width: calc(100vw - 6px);
+  height: calc(100vh - 46px);
+  width: calc(100vw - 46px);
   color: white;
   font-size: 1.5rem;
   border: 3px solid skyblue;
