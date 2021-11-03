@@ -8,7 +8,7 @@ export default function Page(props) {
          <h3>Page Component</h3>
          <p>Hello {props.name}</p>
 
-         {props.value === true ? "true" : "false"}
+         <p>The current value is {props.value === true ? "true" : "false"}</p>
 
           <button
             onClick={()=>props.updateValue(!props.value)}>
