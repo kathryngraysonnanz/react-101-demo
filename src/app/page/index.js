@@ -1,35 +1,25 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import './page.css'
 
-export default class Frame extends Component {
+export default function Page(props) {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      statue: false
-    };
-  }
+  const {value: [value, setValue]} = {value: useState(false), ...(props.state || null)};
 
-  render() {
     return (
       <div className="page-wrapper">
          <h3>Page Component</h3>
-         <p>Hello {this.props.name}</p>
+         <p>Hello {props.name}</p>
 
-          { this.state.status ?
+          { value ?
            <p>Now I'm true</p> :
            <p>Now I'm false</p>
           }
 
           <button
-            onClick={() => this.setState({
-              status: !this.state.status
-            })
-          }>
+            onClick={()=>setValue(!value)}>
           Toggle
           </button>
         </div>
 
     );
   }
-}
